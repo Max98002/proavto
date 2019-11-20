@@ -1,0 +1,32 @@
+.contact
+  position: relative
+  &-block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    max-width: 480px
+    padding: 60px
+    text-align: center
+    background-color: $main-color
+    color: $white-color
+    &__title
+      margin: 0
+      margin-bottom: 20px
+      font-size: 24px
+    &__addrees
+      font-style: normal
+      margin-bottom: 20px
+    &__phone
+      display: block
+      margin-bottom: 20px
+      color: $white-color
+      &:last-child
+        text-decoration: none
+        margin-bottom: 0
+@media (max-width: 767.98px)
+  .contact
+    &-block
+      padding: 20px
+      &__addrees
+        font-size: 12px

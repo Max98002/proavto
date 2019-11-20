@@ -11,9 +11,25 @@ input,
 button,
 a,
   outline: none
-section
+.section
   padding-top: 80px
   padding-bottom: 80px
+  &-title
+    font-size: 30px
+    text-align: center
+    +bold
+    color: $black-color
+  &__title
+    margin: 0
+    margin-bottom: 20px
+  &-subtitle
+    text-align: center
+    font-size: 16px
+    +reg
+    color: $black-color
+  &__subtitle
+    margin: 0
+    margin-bottom: 60px
 .button
   padding: 15px 50px
   border-radius: 25px
@@ -25,3 +41,13 @@ section
   transition: all .2s
   &:hover
     background-color: transparent
+    cursor: pointer
+.input
+  padding: 14px 25px 14px 17px
+  font-size: 13px
+  border: none
+.input::-webkit-input-placeholder
+  color: #b8b8b8
+textarea::-webkit-input-placeholder
+  color: #b8b8b8
+

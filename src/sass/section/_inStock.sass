@@ -1,0 +1,35 @@
+.inStock
+  &-wrap
+    display: flex
+    flex-direction: column
+    &__top
+      display: flex
+      justify-content: space-around
+      align-items: center
+      margin: auto
+      margin-bottom: 20px
+      width: 75%
+      text-align: center
+    &__bottom
+      width: 60%
+      margin: auto
+      &-top, &-bottom
+        display: flex
+        justify-content: space-between
+      &-top
+        margin-bottom: 20px
+@media (max-width: 991.98px) 
+  .inStock
+    &-wrap
+      &__top, &__bottom
+        width: 100%
+@media (max-width: 767.98px)
+  .inStock
+    &-wrap
+      &__top
+        flex-wrap: wrap
+      &__bottom
+        &-top, &-bottom
+          text-align: center
+          flex-wrap: wrap
+          justify-content: center
