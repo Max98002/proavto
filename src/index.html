@@ -18,7 +18,7 @@
       <!-- /.header__logo -->
       <div class="header-info">
         <a href="tel:0680811952" class="header-info__phone">+38 (068) 08-119-52</a>
-        <a href="#" class="header-info__link">Заказать обратный звонок</a>
+        <a href="#" data-target="feedback-modal" class="header-info__link">Заказать обратный звонок</a>
       </div>
       <!-- /.header__info -->
     </div>
@@ -53,12 +53,13 @@
       <div class="header-communication">
         <div class="header-communication__wrap">
           <div class="header-communication__block">
-            <a href="#" class="button header-communication__button">Быстрая заявка</a>
+            <a href="#" data-target="fastApplication" class="button header-communication__button"
+              id="button__fast">Быстрая заявка</a>
             <span class="header-communication__text">Мы перезвоним Вам <br> для уточнения деталей.</span>
           </div>
           <!-- /.header-communication__block -->
           <div class="header-communication__block">
-            <a href="#" class="button header-communication__button">Подробная заявка</a>
+            <a href="#feedback" class="button header-communication__button">Подробная заявка</a>
             <span class="header-communication__text">Заполните подробную <br> заявку онлайн!</span>
           </div>
           <!-- /.header-communication__block -->
@@ -134,7 +135,7 @@
       <!-- /.trust-wrap -->
     </section>
     <!-- /.section trust -->
-    <section class="section application">
+    <section class="section application" id="feedback">
       <h2 class="section-title section__title">Подробная заявка</h2>
       <!-- /.section-title section__title -->
       <p class="section-subtitle section__subtitle">Заполните форму и получите максимально точную цену!</p>
@@ -173,7 +174,7 @@
             <!-- /.select__group -->
             <div class="arr__group">
               <label for="name" class="application__label">Ваше имя:</label>
-              <input type="text" name="name" class="input application__input" placeholder="Введите">
+              <input type="text" name="username" class="input application__input" placeholder="Введите">
             </div>
             <!-- /.select__group -->
           </div>
@@ -181,7 +182,7 @@
           <div class="application-col-33">
             <div class="input__group">
               <label for="phone" class="application__label">Ваш телефон:</label>
-              <input type="text" id="phone" name="phone" class="input application__input">
+              <input type="text" id="phone" name="userphone" class="input application__input">
             </div>
             <!-- /.select__group -->
             <div class="input__group">
@@ -311,21 +312,21 @@
       <!-- /.section-title section__title -->
       <p class="section-subtitle section__subtitle">Заполните форму и получите максимально точную цену!</p>
       <!-- /.section-subtitle section__subtitle -->
-      <form action="#" class="form consultation-form">
+      <form action="#" method="POST" class="form consultation-form" id="consultation" novalidate="novalidate">
         <div class="consultation-wrap">
           <div class="consultation-form__group">
             <label for="name" class="application__label">Ваше имя:</label>
-            <input type="text" class="input consultation-form__input">
+            <input type="text" name="username" class="input consultation-form__input">
           </div>
           <!-- /.consultation-form__group -->
           <div class="consultation-form__group">
             <label for="phone" class="application__label">Ваш e-mail:</label>
-            <input type="text" class="input consultation-form__input">
+            <input type="text" name="email" class="input consultation-form__input">
           </div>
           <!-- /.consultation-form__group -->
         </div>
         <div class="consultation-wrap__button">
-          <button class="button consultation-form__button">Заказать консультацию</button>
+          <button class="button consultation-form__button" type="submit">Заказать консультацию</button>
         </div>
       </form>
     </section>
@@ -344,6 +345,7 @@
         <a href="mailto:bilanych.max98009@gmail.com" class="contact-block__phone">proavtoinfo@proavto.com</a>
       </div>
     </div>
+    <!-- /.section contact -->
   </main>
 
   <footer class="footer">
@@ -361,6 +363,30 @@
     <!-- /.footer-wrap -->
   </footer>
   <!-- /.footer -->
+
+  <div class="modal">
+    <div class="modal-dialog">
+      <button class="modal-dialog__close"></button>
+      <div class="modal-block">
+        <div class="modal-block__content">
+
+        </div>
+        <!-- /.modal-block__content -->
+      </div>
+      <!-- /.modal-block -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <!-- script jqvery -->
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <!-- mask-input -->
+  <script src="./js/jquery.maskedinput.min.js"></script>
+  <!-- script jquery validate -->
+  <script src="./js/jquery.validate.min.js"></script>
+  <!-- script main -->
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
