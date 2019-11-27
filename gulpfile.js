@@ -22,7 +22,7 @@ gulp.task('move-img', () => {
     .pipe(gulp.dest('bild/img'))
 })
 gulp.task('move-js', () => {
-  return gulp.src('src/js/*.min.js')
+  return gulp.src('src/js/*.*')
     .pipe(gulp.dest('bild/js'))
 });
 gulp.task('minjs', function () {
