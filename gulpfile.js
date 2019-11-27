@@ -18,7 +18,7 @@ gulp.task('tinify', function () {
     .pipe(gulp.dest('bild/img'));
 });
 gulp.task('move-img', () => {
-  return gulp.src('src/img/*.svg')
+  return gulp.src('src/img/*.ico')
     .pipe(gulp.dest('bild/img'))
 })
 gulp.task('move-js', () => {
