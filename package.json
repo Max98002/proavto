@@ -1,0 +1,27 @@
+{
+  "name": "proavto",
+  "version": "1.0.0",
+  "description": "Продажа кузовных запчастей с заводской покраской без пробега по УК",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Max98002/proavto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Max98002/proavto/issues"
+  },
+  "homepage": "https://github.com/Max98002/proavto#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-tinify": "^1.0.2"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
+}

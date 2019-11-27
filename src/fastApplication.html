@@ -5,14 +5,14 @@
   <!-- /.modal-block__subtitle -->
 </div>
 <!-- /.modal-block__text -->
-<form action="#" class="form modal-form__feedback">
+<form action="#" class="form modal-form__feedback" id="fastApplication" method="POST">
   <div class="feedback__group">
-    <input type="text" class="input modal-form__input" placeholder="Ваше имя">
+    <input type="text" class="input modal-form__input" name="username" placeholder="Ваше имя">
     <img src="./img/modal/1.png" alt="" class="modal-form__icon">
   </div>
   <!-- /.feedback__group -->
   <div class="feedback__group">
-    <input type="text" class="input modal-form__input modal-phone phone" placeholder="Ваш телефон">
+    <input type="text" class="input modal-form__input modal-phone phone" name="userphone" placeholder="Ваш телефон">
     <img src="./img/modal/2.png" alt="" class="modal-form__icon">
   </div>
   <!-- /.feedback__group -->
@@ -22,5 +22,7 @@
 <script src="./js/jquery-3.4.1.min.js"></script>
 <!-- mask-input -->
 <script src="./js/jquery.maskedinput.min.js"></script>
+<!-- script jquery validate -->
+<script src="./js/jquery.validate.min.js"></script>
 <!-- script main -->
 <script src="./js/main.js"></script>

@@ -60,3 +60,21 @@ div.error
   right: 0
   bottom: -16px
   color: $main-color
+
+.up
+  position: fixed
+  bottom: 9%
+  right: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 60px
+  background-color: $header-bg
+  opacity: 0
+  &-block
+    padding: 10px
+    &__image
+      width: 30px
+@media (max-width: 767.98px)
+  .up
+    opacity: 1
