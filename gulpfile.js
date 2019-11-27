@@ -22,13 +22,12 @@ gulp.task('move-img', () => {
     .pipe(gulp.dest('bild/img'))
 })
 gulp.task('move-js', () => {
-  return gulp.src('src/js/*.*')
+  return gulp.src('src/js/*.min.js')
     .pipe(gulp.dest('bild/js'))
 });
 gulp.task('minjs', function () {
   return gulp.src(['src/js/*.js', '!src/js/*.min.js'])
     .pipe(jsmin())
-    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('bild/js'));
 });
 gulp.task('minify', () => {
